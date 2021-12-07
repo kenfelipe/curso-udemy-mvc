@@ -2,14 +2,18 @@
 
 namespace App\Controller;
 
-class IndexController {
+use MF\Controller\Action;
+
+class IndexController extends Action {
 
   public function index() {
-    echo 'IndexController::index()';
+    $this->view->data = 'Index_Data';
+    $this->render('layout', 'index');
   }
 
   public function about() {
-    echo 'IndexController::about()';
+    $this->view->data = 'About_Data';
+    $this->render('layout_2', 'about');
   }
 }
 
