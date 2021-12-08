@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Controller;
+namespace App\Controllers;
 
 // MF frame
 use MF\Controller\Action;

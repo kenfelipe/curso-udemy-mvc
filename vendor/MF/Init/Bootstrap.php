@@ -20,7 +20,7 @@ abstract class Bootstrap {
   private function run($url) {
     foreach($this->routes as $key => $route) {
       if($route['route'] === $url) {
-        $class = "App\\Controller\\{$route['controller']}";
+        $class = "App\\Controllers\\{$route['controller']}";
         $action = $route['action'];
 
         $controller = new $class();
