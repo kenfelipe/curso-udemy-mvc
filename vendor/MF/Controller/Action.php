@@ -25,7 +25,6 @@ abstract class Action {
 
     require_once $filepath;
   }
-
 }
 
 ?>
