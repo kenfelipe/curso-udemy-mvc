@@ -1,5 +1,8 @@
 <h2>About</h2>
 
 <?php
-  echo $this->view->data;
+  foreach($this->view->data as $todo) {
+    echo $todo->id . ': ' . $todo->todo . ' (' . $todo->state . ')';
+    echo '<br>';
+  }
 ?>
